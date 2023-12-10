@@ -1,0 +1,339 @@
+
+body {
+  font: 20px Montserrat, sans-serif;
+  line-height: 1.8;
+  color: #f5f6f7;
+}
+
+p {
+  font-size: 16px;
+}
+
+.margin {
+  margin-bottom: 25px;
+}
+
+.bg-1 { 
+  background-image: radial-gradient(circle, #093da3, #0c376b, #0d2c57, #132b4d, #14243b);
+  color: #ffffff;
+}
+
+.bg-2 { 
+  background-color: #00183d;
+  color: #fff;
+}
+
+.container-fluid {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.navbar {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  font-size: 12px;
+  letter-spacing: 5px;
+}
+
+.navbar-brand { 
+  float: left; 
+  height: 50px; 
+  padding: 0cap 15px; 
+  font-size: 18px; 
+  line-height: 20px; 
+  margin-bottom: 15px ;
+} 
+.navbar-brand img {
+  width: 60px;
+  height: 60px;
+}
+
+.navbar-nav  li a:hover {
+  color: #1abc9c !important;
+}
+#myNavbar a:before, #myNavbar a:after
+{
+  position: absolute;
+  opacity: 0;
+  width: 0%;
+  height: 2px;
+  content: '';
+  background: #00183d;
+  transition: all 0.3s;
+}
+
+#myNavbar a:before
+{
+  left: 0px;
+  top: 0px;
+}
+
+
+#myNavbar a:after
+{
+  right: 0px;
+  bottom: 0px;
+}
+
+#myNavbar a:hover:before, #myNavbar a:hover:after
+{
+  opacity: 1;
+  width: 100%;
+}
+
+.contact img {
+  width: 50px;
+  height: 50px;
+}
+
+.container-fluid {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.row{
+  padding: 20px;
+  display: flex;
+}
+
+.img-responsive{
+  max-width: 100%;
+  height: auto;
+}
+
+.pic {
+  width: 50%;
+  float: left;
+  padding: 20px;
+  border-radius: 10px;
+  justify-content: center;
+  text-align: center; /* Center align the content */
+}
+
+.pic h3 {
+  margin-top: 20px; /* Adjust as needed */
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+.flip-card {
+  background-color: transparent;
+  width: 400px;
+  height: 400px;
+  perspective: 1000px;
+  margin: 0 auto; /* Center the flip card horizontally */
+}
+
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1500ms;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  margin-right:auto;
+}
+
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #5492b9;
+  color: white;
+  transform: rotateY(180deg);
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the content vertically */
+  justify-content: center;
+  max-width: 100%;
+  height: auto;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  display:block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 250px;
+  font-weight: bold;
+}
+
+input[type=email], textarea{
+  width: 58%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 20px;
+  resize: vertical;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+input[type=text]{
+  width: 31%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+textarea{
+  width: 90%; 
+  padding: 20px; 
+  border: 1px solid #ccc; 
+  border-radius: 16px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical 
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+
+}
+
+.cd-intro-content #img1{
+  opacity: 0;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+}
+.cd-intro-content #img2{
+  opacity: 0;
+  animation-delay: 0.9s;
+  animation-fill-mode: forwards;
+}
+.cd-intro-content #img3{
+  opacity: 0;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+}
+.cd-intro-content #img4{
+  opacity: 0;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+}
+.cd-intro-content #img5{
+  opacity: 0;
+  animation-delay: 0.9s;
+  animation-fill-mode: forwards;
+}
+.cd-intro-content #img6{
+  opacity: 0;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+.bouncy.cd-intro-content img {
+  animation-name: cd-bounce-right;
+}
+.bouncy.cd-intro-content img
+ {
+  animation-duration: 0.6s;
+}
+.bouncy.cd-intro-content {
+  animation-delay: 0.4s;
+}
+
+@keyframes cd-bounce-right {
+  0% {
+    opacity: .2;
+    transform: translateX(-200px);
+  }
+  60% {
+    opacity: .7;
+    transform: translateX(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+#nc {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.colm{
+  margin: auto;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .fullcontent {
+  padding-top: 102px;
+}
+
+.fullcontent {
+  padding: 0px;
+}
+
+.header {
+  height: 80px;
+  padding: 0px;
+  background-color: #007eb6;
+  z-index: 99;
+  position: sticky;
+  top: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .row {
+    flex-direction: column; /* Stack items vertically on small screens */
+  }
+
+  .pic {
+    width: 100%; /* Make the flip card take full width on small screens */
+  }
+
+  .pic-2 {
+    margin-top: 20px; /* Add some space between the two flip cards */
+  }
+}
